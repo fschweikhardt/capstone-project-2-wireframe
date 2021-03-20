@@ -3,26 +3,84 @@
 <head>
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <header role="banner">
+        <nav role="navigation">Nav</nav>
+        <h1><i>Best Books</i></h1>
+    </header>
     <main role="main">
-        <header role="banner">
-            <h1><i>Best Books</i></h1>
-        </header>
-
         <section>
             welcome 
         </section>
 
         <section>
-            <h2>Log In</h2>
-            <button>Click</button>
+            <h2>Book Search</h2>
+            <hr>
+            <form onsubmit="">
+                <div>
+                    <h3>Award Lists</h3>
+                    <label>
+                        Lists 1
+                        <input
+                            type="checkbox"
+                            onClick=>
+                    </label>
+                    <label>
+                        Lists 2
+                        <input
+                            type="checkbox">
+                    </label>
+                    <label>
+                        Lists 3
+                        <input
+                            type="checkbox">
+                    </label>
+                </div>
+                <hr>
+                <div>
+                    <h3>Year</h3>
+                    <label for="year">
+                        Choose a year
+                        <select name="year">
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </label>
+                </div>
+                <hr>
+                <div>
+                    <h3>Author</h3>
+                    <label for="author">
+                        Seach by Author
+                        <input 
+                            type="search" 
+                            name="author"
+                            id="author">
+                    </label>
+                </div>
+                <hr>
+                <br>
+                <button type="submit">
+                    Submit
+                </button>
+                <br>
+                <hr>
+                <hr>
+                <h2>Random book generator</h2>
+                <button type="submit">
+                    Get Book
+                </button>
+            </form>
         </section>
-        
     </main>
-    <footer role="content-info">Footer: (c), about us?, other links</footer>
+    <footer role="content-info">
+        Footer: (c), about us?, other links
+    </footer>
 </body>
 </html>
